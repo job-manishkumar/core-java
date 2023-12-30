@@ -25,7 +25,7 @@ public class MaximunNumberbwTwo {
 	// using without function
 	public static int getMaximumNumber(int a, int b){
 
-		return  a>b?a:b;
+		return  a>=b?a:b;
 	}
 
 	//using Math.max function
