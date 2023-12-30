@@ -1,6 +1,5 @@
 package com.basic.ifelseprogram;
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class AbsoluteNumber {
