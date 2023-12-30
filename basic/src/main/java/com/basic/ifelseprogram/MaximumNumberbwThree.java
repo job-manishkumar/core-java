@@ -20,7 +20,7 @@ public class MaximumNumberbwThree {
 
 	}
 
-	//without funciton
+	//without function
 	public static int getMaxNumber(int a, int b, int c){
 		//return c>((a>=b)?a:b)?c:(a>=b)?a:b);
 		int d = (a>=b)?a:b;
