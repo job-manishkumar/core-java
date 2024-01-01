@@ -13,31 +13,32 @@ public class CountGreaterNumber {
 
 		System.out.println("enter Array element...");
 		int[] a = getInputArray(ARRAY_LENGTH);
-		int count = countGreaterNumber(a,ELEMENT);
-		System.out.println(count+ " elements are grater than "+ELEMENT);
+		int count = countGreaterNumber(a, ELEMENT);
+		System.out.println(count + " elements are grater than " + ELEMENT);
 	}
-	public static int[] getInputArray(int length){
+
+	public static int[] getInputArray(int length) {
 
 		int[] a = new int[length];
 		Scanner scanner = new Scanner(System.in);
-		for(int i=0;i<a.length;i++){
-			a[i]=scanner.nextInt();
+		for (int i = 0; i < a.length; i++) {
+			a[i] = scanner.nextInt();
 		}
-			return  a;
+		return a;
 	}
 
-	public static int countGreaterNumber(int[] a, int element){
+	public static int countGreaterNumber(int[] a, int element) {
 
-		if(a.length==0){
-			throw  new IllegalArgumentException("Array length is zero");
+		if (a.length == 0) {
+			throw new IllegalArgumentException("Array length is zero");
 		}
-		int count=0;
-		for(int i:a){
-			if(element<i){
-				System.out.println("elements which are grater than "+element+" is :"+i);
+		int count = 0;
+		for (int i : a) {
+			if (element < i) {
+				System.out.println("elements which are grater than " + element + " is :" + i);
 				count++;
 			}
 		}
-		return  count;
+		return count;
 	}
 }
