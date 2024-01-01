@@ -21,7 +21,7 @@ public class ShortestElement {
 		int[] arr = new int[length];
 		Scanner scanner = new Scanner(System.in);
 		for(int i=0;i<arr.length;i++){
-			arr[i]= scanner.nextInt();;
+			arr[i]= scanner.nextInt();
 		}
 		return  arr;
 	}
