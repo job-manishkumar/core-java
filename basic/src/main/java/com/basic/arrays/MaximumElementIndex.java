@@ -33,7 +33,7 @@ public class MaximumElementIndex {
 			return  new int[]{};
 		}
 		int maxElement = arr[0];
-		int index =-1;
+		int index =0;
 		for(int i=0;i<arr.length-1;i++){
 			if(maxElement<arr[i+1]){
 					maxElement = arr[i+1];
