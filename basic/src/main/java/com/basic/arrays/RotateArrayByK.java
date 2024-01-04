@@ -1,6 +1,5 @@
 package com.basic.arrays;
 
-import javax.management.StandardEmitterMBean;
 import java.util.Arrays;
 import java.util.Scanner;
 
