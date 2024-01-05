@@ -36,11 +36,10 @@ public class BinarySearch {
 
 		int lowerIndex = 0;
 		int highIndex = a.length - 1;
-		int mediumIndex = -1;
 
 		while (lowerIndex <= highIndex) {
 
-			mediumIndex = (lowerIndex + highIndex) / 2;
+			int mediumIndex = (lowerIndex + highIndex) / 2;
 
 			if (a[mediumIndex] == element) {
 				return mediumIndex;
