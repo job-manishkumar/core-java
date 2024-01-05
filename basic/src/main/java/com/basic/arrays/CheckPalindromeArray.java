@@ -2,7 +2,7 @@ package com.basic.arrays;
 
 import java.util.Scanner;
 
-public class checkPalindromeArray {
+public class CheckPalindromeArray {
 
 
 	// check given array is palindrome or not.
