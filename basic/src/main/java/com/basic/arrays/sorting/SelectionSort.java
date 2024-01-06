@@ -8,6 +8,7 @@ public class SelectionSort {
 	/*selects the smallest (or largest) element from the unsorted portion
 	 of the list and swaps it with the first element of the unsorted part*/
 
+	//selection sort in natural order or increase order
 
 	public static void main(String[] args) {
 
