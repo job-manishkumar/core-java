@@ -35,15 +35,15 @@ public class SelectionSort {
 		}
 		System.out.println("Actual list = " + Arrays.toString(a));
 		for (int i = 0; i < a.length - 1; i++) {
-			int min_index = i;// min index
+			int minIndex = i;// min index
 			for (int j = i + 1; j < a.length; j++) {
-				if (a[min_index] > a[j]) {
-					min_index = j;
+				if (a[minIndex] > a[j]) {
+					minIndex = j;
 				}
 			}
 			int temp = a[i];
-			a[i] = a[min_index];
-			a[min_index] = temp;
+			a[i] = a[minIndex];
+			a[minIndex] = temp;
 
 			System.out.println(Arrays.toString(a));
 		}
