@@ -30,13 +30,15 @@ public class ReverseSelectionSort {
 			throw new IllegalArgumentException("Array size can not zero");
 		}
 		for (int i = 0; i < a.length - 1; i++) {
+			int maxIndex = i;
 			for (int j = i + 1; j < a.length; j++) {
-				if (a[j] > a[i]) {
-					int temp = a[i];
-					a[i] = a[j];
-					a[j] = temp;
+				if (a[j] > a[maxIndex]) {
+					maxIndex = j;
 				}
 			}
+			int temp = a[i];
+			a[i] = a[maxIndex];
+			a[maxIndex] = temp;
 		}
 		return a;
 	}
