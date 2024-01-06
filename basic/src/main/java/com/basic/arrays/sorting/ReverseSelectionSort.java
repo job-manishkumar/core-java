@@ -11,7 +11,7 @@ public class ReverseSelectionSort {
 
 		int length = 6;
 		int[] b = reverseSelectionSort(getInputArray(length));
-		System.out.println("Reverse selectiion sort :" + Arrays.toString(b));
+		System.out.println("Reverse selection sort :" + Arrays.toString(b));
 	}
 
 	public static int[] getInputArray(int length) {
