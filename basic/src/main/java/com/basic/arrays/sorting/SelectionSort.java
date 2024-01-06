@@ -12,7 +12,7 @@ public class SelectionSort {
 
 	public static void main(String[] args) {
 
-		int length = 6;
+		int length = 5;
 
 		int[] b = selectionSort(getInputArray(length));
 		System.out.println("Sort array using selection sort :" + Arrays.toString(b));
@@ -33,14 +33,19 @@ public class SelectionSort {
 		if (a.length == 0) {
 			throw new IllegalArgumentException("Array size must be greater than 0");
 		}
+		System.out.println("Actual list = " + Arrays.toString(a));
 		for (int i = 0; i < a.length - 1; i++) {
+			int min_index = i;// min index
 			for (int j = i + 1; j < a.length; j++) {
-				if (a[i] > a[j]) {
-					int temp = a[i];
-					a[i] = a[j];
-					a[j] = temp;
+				if (a[min_index] > a[j]) {
+					min_index = j;
 				}
 			}
+			int temp = a[i];
+			a[i] = a[min_index];
+			a[min_index] = temp;
+
+			System.out.println(Arrays.toString(a));
 		}
 		return a;
 	}
