@@ -44,8 +44,6 @@ public class SelectionSort {
 			int temp = a[i];
 			a[i] = a[minIndex];
 			a[minIndex] = temp;
-
-			System.out.println(Arrays.toString(a));
 		}
 		return a;
 	}
